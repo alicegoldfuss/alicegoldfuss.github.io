@@ -1,0 +1,55 @@
+---
+layout: default
+thumbnail: cog
+---
+
+
+<div class="container-fluid index">
+    <div class="row">
+
+        <div class="col-md-12 main content-panel">
+
+        	<div class="menu-left"><div class="home_button"><a href="/">Alice Goldfuss</a></div><div class="thumb-page"><i class="fa fa-{{ page.thumbnail }} fa-2x"></i></div>
+              
+<!-- <div class ="thumb-page"><i class="fa fa-{{ page.thumbnail }} fa-2x"></i></div> -->
+
+
+      </div>
+
+           <div class="menu-right">
+            <ul class="page">
+            {% for item in site.menu_items %}
+            {% if item == page.page_title %}
+            <li><a class="active" href="/{{ item | downcase  }}/">{{ item }}</a></li>
+            {% else %}
+            <li><a href="/{{ item | downcase  }}/">{{ item }}</a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+      </div>
+				<div class="post">
+
+<!-- 				  <header class="post-header">
+				    <h1>{{ page.title }}</h1>
+				  </header> -->
+
+				  <article class="post-content">
+				  {{ content }}
+				  </article>
+
+				</div>
+
+          </div>
+
+        
+
+
+
+          
+          <!-- <div class="col-md-12 main content-panel">
+
+
+        </div> -->
+
+    </div>
+</div>

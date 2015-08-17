@@ -1,0 +1,47 @@
+---
+layout: default
+thumbnail: cog
+---
+
+
+<div class="container-fluid index">
+    <div class="row">
+
+        <div class="col-md-12 main content-panel">
+
+          {% if site.data.thumbnail[page.thumbnail] %}
+            <div class="thumb">
+              <img itemprop="image" src="{{ site.data.thumbnail[page.thumbnail] }}" alt="Thumbnail: {{ page.thumbnail }}" />
+            </div>
+          {% elsif page.thumbnail %}
+             <div class="thumb">
+              <i class="fa fa-{{ page.thumbnail }} fa-5x"></i>
+             </div>
+          {% endif %}
+
+            <h1 class="header author-header" itemprop="headline">{{ site.title }}</h1>
+
+            <h3 class="h3-title">
+                {{ site.title_description }}
+            </h3>
+
+            <ul class="index">
+
+            {% for item in site.menu_items %}
+            <li><h3><a href="/{{ item | downcase }}/">{{ item }}</a></h3></li>
+            {% endfor %}
+          </ul>
+          </div>
+
+
+
+
+
+          
+          <!-- <div class="col-md-12 main content-panel">
+
+
+        </div> -->
+
+    </div>
+</div>
