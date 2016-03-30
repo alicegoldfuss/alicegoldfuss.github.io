@@ -1,10 +1,10 @@
 # Site settings
 title: "ALICE GOLDFUSS"
 email: 
-description: "DevOps Imperator"
+description: "DevOps Trickster"
 baseurl: ""
 url: "http://alicegoldfuss.com"
-title_description: "DevOps Imperator"
+title_description: "DevOps Trickster"
 title_image: 
 google_analytics: 
 disqus_account: 
@@ -28,8 +28,8 @@ google_plus_link:
 stackoverflow_link: 
 
 # Footer
-footer_left: "Copyright 2015 Alice Goldfuss"
-footer_right: "Copyright 2015 Alice Goldfuss"
+footer_left: "Copyright 2016 Alice Goldfuss"
+footer_right: "Copyright 2016 Alice Goldfuss"
 
 # Build settings
 markdown: redcarpet
